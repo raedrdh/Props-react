@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import MenuAppBar from './navbar/navbar'
+import NestedList from './navmenu/navmenu'
+import Profile from './profile/profile'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className ='flex1'>
+    <MenuAppBar></MenuAppBar>
+    <div className ='flex2'>
+    <NestedList></NestedList>
+    <Profile></Profile>
     </div>
+</div>    
   );
 }
 
